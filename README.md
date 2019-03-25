@@ -57,6 +57,17 @@ xrdb -load ~/.Xresources
 ```
 Käynnistetään urxvt ja woila!
 
+### Asennetaan kivampi shell
+
+Asennetaan zsh ja konffitaan sen prompt näyttämään kivalta.
+Lopuksi asetetaan zsh oletusshelliksi.
+```
+sudo pacman -S zsh
+mkdir zsh
+vim zsh/.zshrc
+chsh -s /bin/zsh
+```
+
 ### Lisätään Tmuxin konfiguraatio
 ```
 pacaur -S tmux

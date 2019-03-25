@@ -2,6 +2,7 @@ urxvt.font: xft:xos4 Terminus:pixelsize=10
 urxvt.boldFont: xft:xos4 Terminus:pixelsize=10
 urxvt.scrollBar: false
 urxvt.internalBorder: 16
+urxvt.lineSpace: 2
 
 ! Base16 Default Dark
 ! Scheme: Chris Kempson (http://chriskempson.com)
