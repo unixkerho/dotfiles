@@ -2,7 +2,7 @@
 Esimerkki konffifilut (en. 'dotfiles') UNIX-kerhon kickoffia varten
 
 Lähtökohtana kustomoinnille on Arch-asennus parilla perusjutulla.
-Asennettuna valmiiksi muun muassa git ja konffittu Aur (pacaur).
+Asennettuna valmiiksi muun muassa git ja konffittu Aur (yay).
 
 ## Terminaalin kustomointi
 
@@ -14,7 +14,7 @@ Näin alkuperäiset tiedostot voidaan pitää siististi yhdessä kansiossa.
 
 Asennetaan stow
 ```
-pacaur -S stow
+yay -S stow
 ```
 
 Luodaan `dotfiles` kansio käyttäjän kotihakemistoon:
@@ -25,7 +25,7 @@ Tähän kansioon jemmataan kaikki konffitiedostot.
 
 ### Lisätään Vimin konfiguraatio
 ```
-pacaur -S vim
+yay -S vim
 cd dotfiles
 mkdir vim
 vim vim/.vimrc
@@ -39,7 +39,7 @@ stow vim
 
 ### Asennetaan kivampi terminaali ja fontti
 ```
-pacaur -S rxvt-unicode terminus-font
+yay -S rxvt-unicode terminus-font
 ```
 Rxvt-unicoden eli tuttavallisemmin urxvt:n konffit menevät `~/.Xresources`-tiedostoon.
 Luodaan dotfiles-kansioon uusi urxvt-alakansio, jonne lisätään urxvt:n konffit.
@@ -62,7 +62,7 @@ Käynnistetään urxvt ja woila!
 Asennetaan zsh ja konffitaan sen prompt näyttämään kivalta.
 Lopuksi asetetaan zsh oletusshelliksi.
 ```
-sudo pacman -S zsh
+sudo yay -S zsh
 mkdir zsh
 vim zsh/.zshrc
 chsh -s /bin/zsh
@@ -70,7 +70,7 @@ chsh -s /bin/zsh
 
 ### Lisätään Tmuxin konfiguraatio
 ```
-pacaur -S tmux
+yay -S tmux
 mkdir tmux
 vim tmux/.tmux.conf
 ```
@@ -79,7 +79,7 @@ vim tmux/.tmux.conf
 Openbox on window manager jota on kiva kustomoida.
 
 ```
-pacaur -S openbox-patched
+yay -S openbox-patched
 ```
 
 Luodaan konffit xinit:lle.
