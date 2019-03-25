@@ -75,11 +75,8 @@ mkdir tmux
 vim tmux/.tmux.conf
 ```
 
-## Asennetaan Openbox(-patched) ja compton
+## Asennetaan Openbox(-patched)
 Openbox on window manager jota on kiva kustomoida.
-[Compton](https://en.wikipedia.org/wiki/Compositing_window_manager)
-onitsenäinen compositor-sovellus.
-Openboxissa ei ole sellaista vakiona.
 
 ```
 pacaur -S openbox-patched
@@ -96,4 +93,13 @@ vim xinit/.xinitrc
 Lisätään tiedostoon seuraavat rivit: 
 ```
 exec openbox-session
+feh --bg-scale ~/wallpaper.jpg
 ```
+
+Kopiodaan Openboxin vakioasetukset.
+```
+mkdir -p openbox/.config/openbox
+cp /etc/xdg/openbox/rc.xml openbox/.config/openbox/
+```
+Muokataan halutunlaiseksi.
+

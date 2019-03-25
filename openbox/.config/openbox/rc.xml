@@ -40,8 +40,9 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Numix</name>
-    <titleLayout>NLIMC</titleLayout>
+    <name>thicc</name>
+    <cornerRadius>10</cornerRadius>
+    <titleLayout>L</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -52,25 +53,15 @@
       S: shade (roll up/down)
       D: omnipresent (on all desktops).
   -->
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>sans</name>
       <size>8</size>
-      <!-- font size in points -->
-      <weight>bold</weight>
-      <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
-      <!-- 'italic' or 'normal' -->
+      <name>xos4 Terminus</name>
     </font>
     <font place="InactiveWindow">
-      <name>sans</name>
       <size>8</size>
-      <!-- font size in points -->
-      <weight>bold</weight>
-      <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
-      <!-- 'italic' or 'normal' -->
+      <name>xos4 Terminus</name>
     </font>
     <font place="MenuHeader">
       <name>sans</name>
@@ -264,6 +255,16 @@
           <enabled>yes</enabled>
           <name>Konqueror</name>
         </startupnotify>
+      </action>
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute">
+	<command>urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+	<command>chromium</command>
       </action>
     </keybind>
   </keyboard>

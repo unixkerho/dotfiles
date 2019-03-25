@@ -1,3 +1,3 @@
 exec openbox-session
-exec compton &
+feh --bg-scale ~/wallpaper.jpg
 
