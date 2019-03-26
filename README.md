@@ -184,7 +184,7 @@ set -g status-right "#[fg=white]%H:%M #(~/bin/battery Discharging; ~/bin/battery
 Openbox on window manager jota on kiva kustomoida.
 
 ```
-yay -S openbox-patched
+yay -S openbox-patched feh
 ```
 
 ### Lisätään openbox käynnistymään X:n kanssa.
