@@ -170,11 +170,6 @@
     <keybind key="C-A-Left">
       <action name="GoToDesktop"/>
     </keybind>
-    <keybind key="W-space">
-      <action name="Execute">
-        <command>ulauncher</command>
-      </action>
-    </keybind>
     <keybind key="C-A-Right">
       <action name="GoToDesktop"/>
     </keybind>
@@ -256,6 +251,9 @@
           <name>Konqueror</name>
         </startupnotify>
       </action>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
